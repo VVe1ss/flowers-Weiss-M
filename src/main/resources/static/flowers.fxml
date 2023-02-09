@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #2e3348;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kursowa.flowers.controllers.mainMenu.flowers.FlowersController">
+   <children>
+      <AnchorPane layoutX="-10.0" layoutY="85.0" prefHeight="325.0" prefWidth="710.0" style="-fx-background-color: #fafafa;">
+         <children>
+            <Button fx:id="newFlowerButton" layoutX="40.0" layoutY="113.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="219.0" style="-fx-background-color: #f39c63;" text="Нова квітка" textAlignment="CENTER" textFill="WHITE">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+            <Button fx:id="backButton" layoutX="41.0" layoutY="163.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="219.0" style="-fx-background-color: #f39c63;" text="Назад" textAlignment="CENTER" textFill="WHITE">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+            <TextField fx:id="idField" layoutX="41.0" layoutY="35.0" prefHeight="25.0" prefWidth="219.0" promptText="id для редагування/видалення" />
+            <Button fx:id="editDeleteButton" layoutX="41.0" layoutY="64.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="219.0" style="-fx-background-color: #f39c63;" text="Редагувати/Видалити" textAlignment="CENTER" textFill="WHITE">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+            <TextArea fx:id="flowersTextArea" editable="false" layoutX="286.0" layoutY="34.0" prefHeight="260.0" prefWidth="400.0" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="226.0" layoutY="7.0" text="Квіти та букети" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
